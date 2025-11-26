@@ -6,6 +6,7 @@ import path from 'path'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
+    root: '.',
     plugins: [react()],
     resolve: {
       alias: {
@@ -13,7 +14,6 @@ export default defineConfig(({ mode }) => {
       },
     },
     define: {
-      // This is crucial: Vercel uses process.env.API_KEY, but Vite client-side needs it defined
       'process.env.API_KEY': JSON.stringify(env.API_KEY)
     }
   }
