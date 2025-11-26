@@ -1,0 +1,7 @@
+{
+  "name": "Money Notes",
+  "description": "A beautiful, dual-currency expense tracker designed for tracking Australian Dollar (AUD) spending with real-time New Taiwan Dollar (TWD) reference.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
